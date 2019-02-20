@@ -24,6 +24,8 @@ import { AppComponent } from './app.component';
 import { SpinnerComponent } from './shared/spinner.component';
 import { AddExpenseComponent } from './add-expense/add-expense.component';
 import { ViewExpensesComponent } from './view-expenses/view-expenses.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { ViewExpensesComponent } from './view-expenses/view-expenses.component';
     BreadcrumbComponent,
     SidebarComponent,
     AddExpenseComponent,
-    ViewExpensesComponent
+    ViewExpensesComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     CommonModule,
