@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { FullComponent } from './layouts/full/full.component';
 import { AddExpenseComponent } from './add-expense/add-expense.component';
 import { ViewExpensesComponent } from './view-expenses/view-expenses.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 export const Approutes: Routes = [
   {
     path: '',
@@ -19,7 +21,6 @@ export const Approutes: Routes = [
         component: AddExpenseComponent,
         data: {
           title: 'Add Expense',
-          
         }
       },
       {
@@ -27,6 +28,22 @@ export const Approutes: Routes = [
         component: ViewExpensesComponent,
         data: {
           title: 'View Expense',
+          
+        }
+      },
+      {
+        path: 'Login',
+        component: LoginComponent,
+        data: {
+          title: 'Login',
+          
+        }
+      },
+      {
+        path: 'Register',
+        component: RegisterComponent,
+        data: {
+          title: 'Register',
           
         }
       },
