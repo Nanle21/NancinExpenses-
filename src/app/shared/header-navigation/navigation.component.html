@@ -15,7 +15,7 @@
             </div>
         </a>
         <form class="app-search position-absolute" [ngClass]="{'show-search': showSearch}">
-            <input type="text" class="form-control" placeholder="Search &amp; enter">
+            <input type="text" class="form-control" placeholder="Search &amp; enter" disabled>
             <a class="srh-btn" (click)="showSearch = !showSearch">
                 <i class="ti-close"></i>
             </a>
@@ -26,9 +26,7 @@
 <!-- Right side toggle and nav items -->
 <!-- ============================================================== -->
 <ul class="navbar-nav float-right">
-    <li class="nav-item m-r-20">
-        <a href="https://wrappixel.com/templates/niceadmin-angular/" class="btn btn-block btn-danger m-t-15">Upgrade to Pro</a>
-    </li>
+    
     <!-- ============================================================== -->
     <!-- User profile and search -->
     <!-- ============================================================== -->
@@ -37,16 +35,7 @@
             <img src="assets/images/users/2.jpg" alt="user" class="rounded-circle" width="40">
         </a>
         <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY" ngbDropdownMenu>
-            <a class="dropdown-item" href="javascript:void(0)">
-                <i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
-            <a class="dropdown-item" href="javascript:void(0)">
-                <i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
-            <a class="dropdown-item" href="javascript:void(0)">
-                <i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="javascript:void(0)">
-                <i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
-            <div class="dropdown-divider"></div>
+            
             <a class="dropdown-item" href="javascript:void(0)">
                 <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
             <div class="dropdown-divider"></div>
