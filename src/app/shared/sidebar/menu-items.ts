@@ -10,7 +10,7 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: '/starter',
+    path: '/addExpense',
     title: 'Add Expense',
     icon: 'mdi mdi-book-open',
     class: '',
@@ -18,7 +18,7 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: '/add-expense',
+    path: '/viewExpense',
     title: 'View Expenses',
     icon: 'mdi mdi-chart-histogram',
     class: '',
