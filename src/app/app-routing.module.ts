@@ -32,7 +32,7 @@ export const Approutes: Routes = [
         }
       },
       {
-        path: 'Login',
+        path: 'login',
         component: LoginComponent,
         data: {
           title: 'Login',

@@ -1,7 +1,7 @@
 <!-- ============================================================== -->
 <!-- Main wrapper - style you can find in pages.scss -->
 <!-- ============================================================== -->
-<div id="main-wrapper" dir="ltr" data-theme="light" data-layout="vertical" [attr.data-sidebartype]="options.sidebartype" data-sidebar-position="absolute" data-header-position="fixed" data-boxed-layout="full" [ngClass]="{'show-sidebar': showMobileMenu}">
+<div *ngIf="!router.url.includes('login') && !router.url.includes('register')" id="main-wrapper" dir="ltr" data-theme="light" data-layout="vertical" [attr.data-sidebartype]="options.sidebartype" data-sidebar-position="absolute" data-header-position="fixed" data-boxed-layout="full" [ngClass]="{'show-sidebar': showMobileMenu}">
     <!-- ============================================================== -->
     <!-- Topbar header - style you can find in topbar.scss -->
     <!-- ============================================================== -->
@@ -100,3 +100,5 @@
     <!-- End Page wrapper  -->
     <!-- ============================================================== -->
 </div>
+<!-- Pages without sidebar and header -->
+<router-outlet></router-outlet>
